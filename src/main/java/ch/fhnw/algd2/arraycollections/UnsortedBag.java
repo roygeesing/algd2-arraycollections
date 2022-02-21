@@ -1,7 +1,8 @@
 package ch.fhnw.algd2.arraycollections;
 
 import java.util.Arrays;
-import java.util.Objects;
+
+import static java.util.Objects.requireNonNull;
 
 public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 	public static final int DEFAULT_CAPACITY = 100;
@@ -19,9 +20,11 @@ public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 
 	@Override
 	public boolean add(E e) {
-		Objects.requireNonNull(e);
+		requireNonNull(e);
 
-		if (size == data.length) throw new IllegalStateException();
+		if (size == data.length) {
+			throw new IllegalStateException();
+		}
 
 		data[size] = e;
 		size++;

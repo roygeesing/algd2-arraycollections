@@ -1,8 +1,9 @@
 package ch.fhnw.algd2.arraycollections;
 
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Set;
+
+import static java.util.Objects.requireNonNull;
 
 public class SortedSet<E extends Comparable<? super E>> extends AbstractArrayCollection<E> implements Set<E> {
 	public static final int DEFAULT_CAPACITY = 100;
@@ -20,7 +21,7 @@ public class SortedSet<E extends Comparable<? super E>> extends AbstractArrayCol
 
 	@Override
 	public boolean add(E e) {
-		Objects.requireNonNull(e);
+		requireNonNull(e);
 
 		int insertIndex = find(e);
 		if (insertIndex >= 0) {

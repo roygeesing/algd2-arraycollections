@@ -1,7 +1,8 @@
 package ch.fhnw.algd2.arraycollections;
 
 import java.util.Arrays;
-import java.util.Objects;
+
+import static java.util.Objects.requireNonNull;
 
 public class SortedBag<E extends Comparable<? super E>> extends AbstractArrayCollection<E> {
 	public static final int DEFAULT_CAPACITY = 100;
@@ -19,7 +20,7 @@ public class SortedBag<E extends Comparable<? super E>> extends AbstractArrayCol
 
 	@Override
 	public boolean add(E e) {
-		Objects.requireNonNull(e);
+		requireNonNull(e);
 
 		int insertIndex = find(e);
 		if (insertIndex < 0) {

@@ -1,8 +1,9 @@
 package ch.fhnw.algd2.arraycollections;
 
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Set;
+
+import static java.util.Objects.requireNonNull;
 
 public class UnsortedSet<E> extends AbstractArrayCollection<E> implements Set<E> {
 	public static final int DEFAULT_CAPACITY = 100;
@@ -20,7 +21,7 @@ public class UnsortedSet<E> extends AbstractArrayCollection<E> implements Set<E>
 
 	@Override
 	public boolean add(E e) {
-		Objects.requireNonNull(e);
+		requireNonNull(e);
 
 		if (find(e) >= 0) {
 			return false;
@@ -39,7 +40,6 @@ public class UnsortedSet<E> extends AbstractArrayCollection<E> implements Set<E>
 	@Override
 	public boolean remove(Object o) {
 		int index = find(o);
-
 		if (index < 0) {
 			return false;
 		}
