@@ -20,10 +20,12 @@ public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 	@Override
 	public boolean add(E e) {
 		Objects.requireNonNull(e);
+
 		if (size == data.length) throw new IllegalStateException();
 
 		data[size] = e;
 		size++;
+
 		return true;
 	}
 
@@ -37,8 +39,10 @@ public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 		for (int i = index; i < size - 1; i++) {
 			data[i] = data[i+1];
 		}
+
 		size--;
 		data[size] = null;
+
 		return true;
 	}
 

@@ -21,30 +21,40 @@ public class SortedSet<E extends Comparable<? super E>> extends AbstractArrayCol
 	@Override
 	public boolean add(E e) {
 		Objects.requireNonNull(e);
+
 		int insertIndex = 0;
 		while (insertIndex < size && e.compareTo(data[insertIndex]) > 0) {
 			insertIndex++;
 		}
+
 		if (insertIndex + 1 > data.length) throw new IllegalStateException();
+
 		if (data[insertIndex] != null && e.compareTo(data[insertIndex]) == 0) return false;
+
 		for (int i = size; i > insertIndex; i--) {
 			data[i] = data[i-1];
 		}
+
 		data[insertIndex] = e;
 		size++;
+
 		return true;
 	}
 
 	@Override
 	public boolean remove(Object o) {
 		int index = find(o);
-		if (index < 0) return false;
+		if (index < 0) {
+			return false;
+		}
 
 		for (int i = index; i < size - 1; i++) {
 			data[i] = data[i+1];
 		}
+
 		size--;
 		data[size] = null;
+
 		return true;
 	}
 
