@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch.fhnw.algd2.arraycollections.UnsortedSetTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2022-02-21T09:21:20" hostname="LAPTOP-UPI5PUTL" time="0.274">
+  <properties/>
+  <testcase name="testLinearSearch" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.004"/>
+  <testcase name="addExistingElementToFullSet" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.002"/>
+  <testcase name="containsNull" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.0"/>
+  <testcase name="removeLastElement" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="removeNonExisting" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="addNumberSequence" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="addDuplicates" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="containsLastElement" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="addNull" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.002"/>
+  <testcase name="removeHasNoMemoryLeak" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.242"/>
+  <testcase name="addUnsortedNumberSequence" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="testEmptyCollection" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="notExistingElementInFullCollection" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="removeElement" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="removeElementFromFullList" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.0"/>
+  <testcase name="addMoreThanCapacity" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.003"/>
+  <testcase name="containsWithEquals" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.0"/>
+  <testcase name="addSingleNull" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <testcase name="containsOtherObject" classname="ch.fhnw.algd2.arraycollections.UnsortedSetTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
