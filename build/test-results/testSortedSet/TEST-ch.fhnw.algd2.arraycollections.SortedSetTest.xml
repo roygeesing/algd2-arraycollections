@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ch.fhnw.algd2.arraycollections.SortedSetTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2022-02-21T08:40:54" hostname="LAPTOP-UPI5PUTL" time="0.352">
+<testsuite name="ch.fhnw.algd2.arraycollections.SortedSetTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2022-02-21T08:46:19" hostname="LAPTOP-UPI5PUTL" time="0.293">
   <properties/>
-  <testcase name="addExistingElementToFullSet" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.005"/>
-  <testcase name="containsNull" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
-  <testcase name="removeLastElement" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.002"/>
+  <testcase name="addExistingElementToFullSet" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.004"/>
+  <testcase name="containsNull" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.002"/>
+  <testcase name="removeLastElement" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
   <testcase name="removeNonExisting" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
-  <testcase name="addNumberSequence" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.002"/>
+  <testcase name="addNumberSequence" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
   <testcase name="addDuplicates" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
-  <testcase name="containsLastElement" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.0"/>
-  <testcase name="addNull" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.002"/>
-  <testcase name="removeHasNoMemoryLeak" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.312"/>
+  <testcase name="containsLastElement" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
+  <testcase name="addNull" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
+  <testcase name="removeHasNoMemoryLeak" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.258"/>
   <testcase name="addUnsortedNumberSequence" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
   <testcase name="testEmptyCollection" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
   <testcase name="notExistingElementInFullCollection" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
-  <testcase name="removeElement" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.002"/>
-  <testcase name="removeElementFromFullList" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
+  <testcase name="removeElement" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
+  <testcase name="removeElementFromFullList" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.0"/>
   <testcase name="addMoreThanCapacity" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
-  <testcase name="containsWithEquals" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.002"/>
+  <testcase name="containsWithEquals" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.003"/>
   <testcase name="addSingleNull" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
-  <testcase name="containsOtherObject" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.001"/>
+  <testcase name="containsOtherObject" classname="ch.fhnw.algd2.arraycollections.SortedSetTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

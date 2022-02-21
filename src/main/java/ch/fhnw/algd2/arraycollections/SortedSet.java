@@ -54,13 +54,7 @@ public class SortedSet<E extends Comparable<? super E>> extends AbstractArrayCol
 	}
 
 	private int find(Object o) {
-		E element = (E) o;
-
-		for (int i = 0; i < size; i++) {
-			if (data[i].compareTo(element) == 0) return i;
-		}
-
-		return -1;
+		return Arrays.binarySearch(data, 0, size, o);
 	}
 
 	@Override
