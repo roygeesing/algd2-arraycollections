@@ -1,0 +1,21 @@
+ch/fhnw/algd2/arraycollections/UnsortedBagTest.java
+ ch.fhnw.algd2.arraycollections.UnsortedBagTest
+ch/fhnw/algd2/arraycollections/general/AbstractCollectionTest.java
+ ch.fhnw.algd2.arraycollections.general.AbstractCollectionTest
+ch/fhnw/algd2/arraycollections/general/Elem.java
+ ch.fhnw.algd2.arraycollections.general.Elem
+ch/fhnw/algd2/arraycollections/general/MemoryLeakChecker.java
+ ch.fhnw.algd2.arraycollections.general.MemoryLeakChecker
+ ch.fhnw.algd2.arraycollections.general.MemoryLeakChecker$TestObj
+ch/fhnw/algd2/arraycollections/UnsortedSetTest.java
+ ch.fhnw.algd2.arraycollections.UnsortedSetTest
+ch/fhnw/algd2/arraycollections/SortedBagTest.java
+ ch.fhnw.algd2.arraycollections.SortedBagTest
+ch/fhnw/algd2/arraycollections/SortedSetTest.java
+ ch.fhnw.algd2.arraycollections.SortedSetTest
+ch/fhnw/algd2/arraycollections/general/AbstractSetTest.java
+ ch.fhnw.algd2.arraycollections.general.AbstractSetTest
+ch/fhnw/algd2/arraycollections/general/ElementExistenceChecker.java
+ ch.fhnw.algd2.arraycollections.general.ElementExistenceChecker
+ch/fhnw/algd2/arraycollections/general/AbstractBagTest.java
+ ch.fhnw.algd2.arraycollections.general.AbstractBagTest
