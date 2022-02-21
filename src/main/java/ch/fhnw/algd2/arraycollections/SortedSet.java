@@ -22,14 +22,12 @@ public class SortedSet<E extends Comparable<? super E>> extends AbstractArrayCol
 	public boolean add(E e) {
 		Objects.requireNonNull(e);
 
-		int insertIndex = 0;
-		while (insertIndex < size && e.compareTo(data[insertIndex]) > 0) {
-			insertIndex++;
+		int insertIndex = find(e);
+		if (insertIndex >= 0) {
+			return false;
 		}
-
-		if (insertIndex + 1 > data.length) throw new IllegalStateException();
-
-		if (data[insertIndex] != null && e.compareTo(data[insertIndex]) == 0) return false;
+		insertIndex = Math.abs(insertIndex) - 1;
+		if (insertIndex >= data.length) throw new IllegalStateException();
 
 		for (int i = size; i > insertIndex; i--) {
 			data[i] = data[i-1];
