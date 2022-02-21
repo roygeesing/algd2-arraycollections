@@ -1,10 +1,12 @@
 package ch.fhnw.algd2.arraycollections;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 	public static final int DEFAULT_CAPACITY = 100;
 	private E[] data;
+	private int size = 0;
 
 	public UnsortedBag() {
 		this(DEFAULT_CAPACITY);
@@ -17,20 +19,41 @@ public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 
 	@Override
 	public boolean add(E e) {
-		// TODO implement unless collection shall be immutable
-		throw new UnsupportedOperationException();
+		Objects.requireNonNull(e);
+		if (size == data.length) throw new IllegalStateException();
+
+		data[size] = e;
+		size++;
+		return true;
 	}
 
 	@Override
 	public boolean remove(Object o) {
-		// TODO implement unless collection shall be immutable
-		throw new UnsupportedOperationException();
+		int index = find(o);
+		if (index < 0) {
+			return false;
+		}
+
+		for (int i = index; i < size - 1; i++) {
+			data[i] = data[i+1];
+		}
+		size--;
+		data[size] = null;
+		return true;
 	}
 
 	@Override
 	public boolean contains(Object o) {
-		// TODO must be implemented
-		throw new UnsupportedOperationException();
+		return find(o) >= 0;
+	}
+
+	private int find(Object o) {
+		for (int i = 0; i < size; i++) {
+			if (data[i].equals(o)) {
+				return i;
+			}
+		}
+		return -1;
 	}
 
 	@Override
@@ -40,8 +63,7 @@ public class UnsortedBag<E> extends AbstractArrayCollection<E> {
 
 	@Override
 	public int size() {
-		// TODO must be implemented
-		return 0;
+		return size;
 	}
 
 	public static void main(String[] args) {
